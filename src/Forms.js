@@ -90,7 +90,7 @@ const ContactForm = () => {
       );
    
       setForm(INITIAL_STATE);
-      setIsSuccess(true);
+      setIsSuccess(true)
     } catch (error) {
       console.log(error);
       setSubmitError("There was an error submitting the form. Please try again later.");
@@ -128,7 +128,7 @@ const ContactForm = () => {
           ) : null}
         </div>
 
-        <div class="field">
+        <div className="field">
           <label htmlFor="email">
             Email-address: <span className="asteric">*</span>
           </label>
@@ -146,7 +146,7 @@ const ContactForm = () => {
           ) : null}
         </div>
 
-        <div class="field">
+        <div className="field">
           <label htmlFor="subject">Subject:</label>
           <input
             id="subject"
@@ -157,12 +157,12 @@ const ContactForm = () => {
           />
         </div>
 
-        <div class="fieldLast">
+        <div className="fieldLast">
           <label htmlFor="details">
             Message: <span className="asteric">*</span>
           </label>
           <input
-            class="message"
+            className="message"
             id="details" type="text" value=
             {form.details}
             placeholder="Comment here"
@@ -174,7 +174,7 @@ const ContactForm = () => {
             </span>
           ) : null}
         </div>
-        <span class="required">* - required fields</span>
+        <span className="required">* - required fields</span>
         <button type="submit">Submit</button>
       </form>
     </div>
